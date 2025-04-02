@@ -52,6 +52,35 @@ python src/server.py
 
 The server will start and be available for MCP clients to connect to.
 
+## Testing with Claude for Desktop
+
+### Configuration:
+
+Open your Claude for Desktop App configuration in a text editor. Create the file if it doesn't exist.
+
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+- Mac: `~/Library/Application\ Support/Claude/claude_desktop_config.json`
+
+
+Add the Alpaca MCP server configuration:
+
+```json
+{
+    "mcpServers": {
+        "alpaca": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "/ABSOLUTE/PATH/TO/PARENT/FOLDER/alpaca-mcp-server",
+                "run",
+                "src/server.py"
+            ]
+        }
+    }
+}
+```
+[MCP For Server Developers: Quickstart](https://modelcontextprotocol.io/quickstart/server)
+
 ## Available Resources
 
 The server provides the following resources:
