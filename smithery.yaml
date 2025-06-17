@@ -1,0 +1,31 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'python',
+      args: ['src/server.py'],
+      env: {
+        ALPACA_PAPER_API_KEY: config.alpacaPaperApiKey,
+        ALPACA_PAPER_API_SECRET: config.alpacaPaperApiSecret
+      }
+    })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - alpacaPaperApiKey
+      - alpacaPaperApiSecret
+    properties:
+      alpacaPaperApiKey:
+        type: string
+        description: Alpaca Paper Trading API Key
+      alpacaPaperApiSecret:
+        type: string
+        description: Alpaca Paper Trading API Secret
+  exampleConfig:
+    alpacaPaperApiKey: PKTEST1234567890
+    alpacaPaperApiSecret: SECTEST0987654321
