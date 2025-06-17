@@ -1,5 +1,7 @@
 # Alpaca Trading MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@laukikk/alpaca-mcp)](https://smithery.ai/server/@laukikk/alpaca-mcp)
+
 A Model Context Protocol (MCP) server that provides an interface to the Alpaca trading API, allowing you to manage your stock and crypto portfolio, place trades, and access market data.
 
 ## Features
@@ -12,6 +14,15 @@ A Model Context Protocol (MCP) server that provides an interface to the Alpaca t
 
 ## Installation
 
+### Installing via Smithery
+
+To install Alpaca Trading MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@laukikk/alpaca-mcp):
+
+```bash
+npx -y @smithery/cli install @laukikk/alpaca-mcp --client claude
+```
+
+### Manual Installation
 1. Clone this repository
 2. Install dependencies:
 
