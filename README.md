@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/laukikk-alpaca-mcp-badge.png)](https://mseep.ai/app/laukikk-alpaca-mcp)
+
 # Alpaca Trading MCP Server
 
 [![smithery badge](https://smithery.ai/badge/@laukikk/alpaca-mcp)](https://smithery.ai/server/@laukikk/alpaca-mcp)
