@@ -7,4 +7,5 @@ requires-python = ">=3.13"
 dependencies = [
     "alpaca-py>=0.39.1",
     "mcp[cli]>=1.6.0",
+    "sqlalchemy>=2.0.41",
 ]
