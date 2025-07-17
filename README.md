@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/laukikk-alpaca-mcp-badge.png)](https://mseep.ai/app/laukikk-alpaca-mcp)
+
 # Alpaca Trading MCP Server
 
 A Model Context Protocol (MCP) server that provides an interface to the Alpaca trading API, allowing you to manage your stock and crypto portfolio, place trades, and access market data.
